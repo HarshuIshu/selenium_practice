@@ -1,0 +1,10 @@
+21:59:15.663 [main] INFO  frames.LogiTest - collecting input data from array class and signing in
+21:59:27.863 [main] INFO  frames.LogiTest - collecting input data from array class and signing in
+21:59:38.349 [main] INFO  frames.LogiTest - closing browser after test execution is passed
+22:04:17.574 [main] INFO  frames.LogiTest - Initiating Browser
+22:04:22.243 [main] INFO  frames.LogiTest - Opening Webpage
+22:05:37.591 [main] INFO  frames.LogiTest - checked for ads
+22:05:37.592 [main] INFO  frames.LogiTest - checking if Featured Coursed text is same on webpage
+22:05:37.887 [main] INFO  frames.LogiTest - Printing texts from navigation bar
+22:05:37.983 [main] INFO  frames.LogiTest - test passes if navigation bar is present
+22:05:38.737 [main] INFO  frames.LogiTest - collecting input data from array class and signing in

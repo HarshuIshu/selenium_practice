@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+<!-- properties to be added to reach the basepath -->
+   <Properties>
+ <Property name="basePath">./Logs</Property>
+</Properties>
+
+  <Appenders> <!-- can give file location to print output in file -->
+   
+    <RollingFile name="File" fileName="${basePath}/Report.log" filePattern="${basePath}/Report-%d{yyyy-MM-dd}.log">
+    <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+      <SizeBasedTriggeringPolicy size="800" />
+          </RollingFile>
+  
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Root level="trace"> <!-- trace prints all the statements from all package.errors prints only errors -->
+      <AppenderRef ref="File"/>
+    </Root>
+  </Loggers>
+</Configuration>

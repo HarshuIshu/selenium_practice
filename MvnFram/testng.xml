@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<!-- adding listeners to modify test results-screenshot on failure -->
+<listeners>
+<listener class-name="frames.Listeners"/>
+<listener class-name="pageobject.ExtentReporterNG"/>
+</listeners>
+ 
+ <!-- all classes is considered as one single test,aaaafter test-closing browser would execute at the end.
+ Make all classes as individual test to execute after class and close the browser
+  <test thread-count="5" name="QAclick">
+    <classes>
+      <class name="frames.LogiTest"/>
+      <class name="pageobject.Justchecking"/>
+  <class name="frames.SecondCheck"/>
+  </classes></test> -->
+  
+  
+  <!-- Individual tests -->
+  
+  <test name="QAclick"><classes>
+  <class name="frames.LogiTest">
+  </class></classes></test>
+   
+   <test name="fb"><classes>
+  <class name="pageobject.Justchecking"></class>
+  </classes></test>
+    
+    <test name="google"><classes>
+  <class name="frames.SecondCheck"></class>
+  </classes></test>
+  
+  
+</suite> <!-- Suite -->
+
+
+

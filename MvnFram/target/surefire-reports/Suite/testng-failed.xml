@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="frames.Listeners"/>
+    <listener class-name="pageobject.ExtentReporterNG"/>
+  </listeners>
+  <test name="QAclick(failed)">
+    <classes>
+      <class name="frames.SecondCheck">
+        <methods>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- frames.SecondCheck -->
+      <class name="pageobject.Justchecking">
+        <methods>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- pageobject.Justchecking -->
+      <class name="frames.LogiTest">
+        <methods>
+          <include name="execution"/>
+          <include name="closeBrowser"/>
+          <include name="execute" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- frames.LogiTest -->
+    </classes>
+  </test> <!-- QAclick(failed) -->
+  <test name="google(failed)">
+    <classes>
+      <class name="frames.SecondCheck">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Browser"/>
+        </methods>
+      </class> <!-- frames.SecondCheck -->
+      <class name="pageobject.Justchecking">
+        <methods>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- pageobject.Justchecking -->
+      <class name="frames.LogiTest">
+        <methods>
+          <include name="execution"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- frames.LogiTest -->
+    </classes>
+  </test> <!-- google(failed) -->
+</suite> <!-- Failed suite [Suite] -->

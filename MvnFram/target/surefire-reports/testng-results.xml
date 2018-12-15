@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="93548" started-at="2018-12-14T15:00:38Z" finished-at="2018-12-14T15:02:11Z">
+    <groups>
+    </groups>
+    <test name="QAclick" duration-ms="73943" started-at="2018-12-14T15:00:38Z" finished-at="2018-12-14T15:01:51Z">
+      <class name="frames.LogiTest">
+        <test-method status="PASS" signature="execution()[pri:0, instance:frames.LogiTest@20ce78ec]" name="execution" is-config="true" duration-ms="39041" started-at="2018-12-14T07:00:38Z" finished-at="2018-12-14T07:01:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execution -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frames.LogiTest@20ce78ec]" name="execute" duration-ms="15794" started-at="2018-12-14T07:01:17Z" data-provider="getdata" finished-at="2018-12-14T07:01:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ishu@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Harshithalovesyou]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:frames.LogiTest@20ce78ec]" name="execute" duration-ms="16764" started-at="2018-12-14T07:01:32Z" data-provider="getdata" finished-at="2018-12-14T07:01:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abhilash@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abhilashlovesu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:frames.LogiTest@20ce78ec]" name="closeBrowser" is-config="true" duration-ms="2324" started-at="2018-12-14T07:01:49Z" finished-at="2018-12-14T07:01:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- frames.LogiTest -->
+    </test> <!-- QAclick -->
+    <test name="fb" duration-ms="9135" started-at="2018-12-14T15:01:51Z" finished-at="2018-12-14T15:02:01Z">
+      <class name="pageobject.Justchecking">
+        <test-method status="PASS" signature="browser()[pri:0, instance:pageobject.Justchecking@7334aada]" name="browser" duration-ms="7021" started-at="2018-12-14T07:01:51Z" finished-at="2018-12-14T07:01:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:pageobject.Justchecking@7334aada]" name="closeBrowser" is-config="true" duration-ms="2112" started-at="2018-12-14T07:01:58Z" finished-at="2018-12-14T07:02:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- pageobject.Justchecking -->
+    </test> <!-- fb -->
+    <test name="google" duration-ms="10441" started-at="2018-12-14T15:02:01Z" finished-at="2018-12-14T15:02:11Z">
+      <class name="frames.SecondCheck">
+        <test-method status="PASS" signature="Browser()[pri:0, instance:frames.SecondCheck@62150f9e]" name="Browser" duration-ms="8269" started-at="2018-12-14T07:02:01Z" finished-at="2018-12-14T07:02:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:frames.SecondCheck@62150f9e]" name="closeBrowser" is-config="true" duration-ms="2170" started-at="2018-12-14T07:02:09Z" finished-at="2018-12-14T07:02:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- frames.SecondCheck -->
+    </test> <!-- google -->
+  </suite> <!-- Suite -->
+</testng-results>
