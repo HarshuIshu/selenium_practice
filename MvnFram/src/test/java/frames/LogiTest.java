@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import frames.BaseClass;
 import pageobject.Email;
 import pageobject.Hompage;
+import frames.Array;
 
 
 public class LogiTest extends Array {
