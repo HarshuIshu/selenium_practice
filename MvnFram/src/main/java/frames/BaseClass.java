@@ -25,6 +25,9 @@ public class BaseClass {
 	public static String email;
 	public static String password;
 	//public Properties p;
+public static String dir=System.getProperty("user.dir");
+	
+	
 	
 	public void properties( ) throws IOException
 	{
@@ -45,23 +48,24 @@ public class BaseClass {
 	}
 	public static WebDriver openBrowser() throws IOException
 	{
+		
 		//properties();//works when properties method is declared as static
       BaseClass b=new BaseClass();//properties method is declared as non static,hence created the object b with class name
        b.properties();
 
 		if(browser.equalsIgnoreCase("chrome"))//browser=chrome is wrong as it will not compare,it will try to check the memory and allocates 
 		{
-			System.setProperty("webdriver.chrome.driver", "E:\\Testing\\Eclipse\\Home\\driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", (dir+ "\\driver\\chromedriver.exe"));
 			driver=new ChromeDriver();
 		}
 		else if(browser.equalsIgnoreCase("Firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver","E:\\Testing\\Eclipse\\Home\\driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",(dir+ "\\driver\\geckodriver.exe"));
 			driver=new FirefoxDriver();
 		}
 		else if (browser.equalsIgnoreCase("IE"))
 		{
-			System.setProperty("webdriver.ie.driver","E:\\Testing\\Eclipse\\Home\\driver\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver",(dir+ "\\driver\\IEDriverServer.exe"));
 			driver=new InternetExplorerDriver();
 		}
 		
@@ -71,7 +75,7 @@ public class BaseClass {
 	
 	public WebDriver Screenshots(String resultName) throws IOException {
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src,new File("C:\\Users\\Harshitha\\MvnFram\\Screenshots\\"+resultName +"Screenshot.png"));
+		FileUtils.copyFile(src,new File(dir+"\\Screenshots\\"+resultName +"Screenshot.png"));
 		return driver;
 	}
 	
