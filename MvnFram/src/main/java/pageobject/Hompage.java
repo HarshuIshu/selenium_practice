@@ -61,8 +61,9 @@ public Hompage(WebDriver driver) { //constructor
 	
 	}
 	
-	public  void loadPage( ) throws IOException {
+	public  void loadPage( ) throws IOException, InterruptedException {
 		 d.get(BaseClass.url);//url is static variable hence no need of object
+		 Thread.sleep(1000);
 		 d.navigate().refresh();
 		
 		
