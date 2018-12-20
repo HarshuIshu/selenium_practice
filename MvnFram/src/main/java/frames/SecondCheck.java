@@ -36,7 +36,7 @@ public class SecondCheck extends BaseClass{
 	          @Test        
         public static void Browser() throws IOException {
 		
-			System.setProperty("webdriver.chrome.driver","E:\\Testing\\Eclipse\\Home\\driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",(dir+ "\\driver\\chromedriver.exe"));
 	        driver=new ChromeDriver();//ChromeDriver driver =new ChromeDriver is the class name driver is the object -actually importing all this from webdriver methods -webdriver is the interface 
 	        driver.get(aTitle);
 	      //  driver.findElement(By.className("facebook"));
