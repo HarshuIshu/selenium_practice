@@ -31,11 +31,10 @@ public static String dir=System.getProperty("user.dir");
 	
 	public void properties( ) throws IOException
 	{
-
-		
 		String dir=System.getProperty("user.dir");
 		System.out.println("this is the path directory "+dir);
 		// p=new Properties();
+		
 		Properties p=new Properties();
 		FileInputStream f=new FileInputStream(dir+"\\src\\main\\java\\data.properties");
 		p.load(f);
