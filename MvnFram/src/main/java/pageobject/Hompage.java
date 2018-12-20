@@ -63,6 +63,7 @@ public Hompage(WebDriver driver) { //constructor
 	
 	public  void loadPage( ) throws IOException {
 		 d.get(BaseClass.url);//url is static variable hence no need of object
+		 d.navigate().refresh();
 		
 		
 		 if(d.findElements(By.xpath("//div[contains(@class,'close-button')]")).size()>0)
