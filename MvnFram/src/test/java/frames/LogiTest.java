@@ -23,7 +23,7 @@ public class LogiTest extends Array {
 	
 	@BeforeTest
 	
-	public void execution() throws IOException {
+	public void execution() throws IOException, InterruptedException {
 	
 	//driver=openBrowser();	
 	//BaseClass.openBrowser();//static method hence no need of objection creation to call the method
