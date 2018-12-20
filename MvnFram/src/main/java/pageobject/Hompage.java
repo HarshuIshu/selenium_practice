@@ -63,8 +63,17 @@ public Hompage(WebDriver driver) { //constructor
 	}
 	
 	public  void loadPage( ) throws IOException, InterruptedException {
-		 d.get(BaseClass.url);//url is static variable hence no need of object
-		 if(d.findElement(Nav).isDisplayed())
+		
+		d.get(BaseClass.url);//url is static variable hence no need of object
+		  int  nBar = d.findElements(Nav).size();
+		  
+		while(nBar==0) {
+			//Thread.sleep(1000);
+			 d.navigate().refresh();
+			 System.out.println(" did my job");
+			// break;
+		 }
+		/* if(d.findElement(Nav).isDisplayed())
 		 {
 			 System.out.println("Navigation bar is present");
 		 }
@@ -72,7 +81,7 @@ public Hompage(WebDriver driver) { //constructor
 		 {
 			 Thread.sleep(1000);
 			 d.navigate().refresh();
-		 }
+		 }*/
 		 
 		 if(d.findElements(By.xpath("//div[contains(@class,'close-button')]")).size()>0)
 		 {//isenabled
