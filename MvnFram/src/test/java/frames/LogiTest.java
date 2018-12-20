@@ -32,7 +32,8 @@ public class LogiTest extends Array {
 	 *  Hompage h=new Hompage(driver);//non staitic method hence created object h to call the method 
 	h.loadPage();//passed driver as argument
 */
-	    log.info("Initiating Browser");
+		
+	 log.info("Initiating Browser");
 		BaseClass.openBrowser();
 		log.info("Opening Webpage");
 		Hompage h=new Hompage(driver);//non staitic method hence created object h to call the method 
